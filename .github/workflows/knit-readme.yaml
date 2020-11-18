@@ -12,7 +12,7 @@ jobs:
       image: ghcr.io/statprog-s1-2020/hw2-docker:latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: Install Missing Packages
       run: |
         missing = checklist::missing_pkgs(dir = "./", glob = "lab-06.Rmd")
