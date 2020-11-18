@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@main
     - name: Install Missing Packages
       run: |
-        missing = checklist::missing_pkgs(dir = "./", glob = "lab-06.Rmd")
+        missing = checklist::missing_pkgs(dir = "./", glob = "README.Rmd")
         if (length(missing) > 0)
           install.packages(pkgs = missing)
       shell: Rscript {0}
