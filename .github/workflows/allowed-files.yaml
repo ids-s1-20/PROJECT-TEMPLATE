@@ -2,7 +2,7 @@ on:
   push:
     branches:
     - main
-name: allowed files
+name: Check allowed files
 jobs:
   allowed-files:
     runs-on: self-hosted
