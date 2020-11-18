@@ -1,9 +1,10 @@
 on: 
   push:
     branches:
-    - master
+    - main
     paths:
     - 'README.Rmd'
+    - 'presentation/presentation.Rmd'
 name: knit
 jobs:
   knit:
@@ -15,3 +16,5 @@ jobs:
       uses: actions/checkout@master
     - name: Check
       run: Rscript -e "rmarkdown::render('README.Rmd')"
+    - name: Check
+      run: Rscript -e "rmarkdown::render('presentation/presentation.Rmd')"

@@ -1,7 +1,7 @@
 on: 
   push:
     branches:
-    - master
+    - main
 name: allowed files
 jobs:
   allowed-files:
