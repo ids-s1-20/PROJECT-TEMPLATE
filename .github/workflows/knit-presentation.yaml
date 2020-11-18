@@ -3,7 +3,6 @@ on:
     branches:
     - main
     paths:
-    - 'README.Rmd'
     - 'presentation/presentation.Rmd'
 name: knit
 jobs:
@@ -14,7 +13,5 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-    - name: Check
-      run: Rscript -e "rmarkdown::render('README.Rmd')"
     - name: Check
       run: Rscript -e "rmarkdown::render('presentation/presentation.Rmd')"
