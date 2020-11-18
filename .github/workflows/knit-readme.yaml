@@ -4,7 +4,7 @@ on:
     - main
     paths:
     - 'README.Rmd'
-name: knit
+name: knit readme
 jobs:
   knit:
     runs-on: self-hosted

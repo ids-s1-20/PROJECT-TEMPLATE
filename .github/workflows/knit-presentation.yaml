@@ -4,7 +4,7 @@ on:
     - main
     paths:
     - 'presentation/presentation.Rmd'
-name: knit
+name: knit presentation
 jobs:
   knit:
     runs-on: self-hosted
