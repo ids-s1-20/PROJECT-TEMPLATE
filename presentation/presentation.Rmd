@@ -6,6 +6,7 @@ institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
+    css: xaringan-themer.css
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -14,13 +15,13 @@ output:
       countIncrementalSlides: false
 ---
 
-
 ```{r load-packages, include = FALSE}
 # Add any additional packages you need to this chunk
 library(tidyverse)
 library(tidymodels)
 library(palmerpenguins)
 library(knitr)
+library(xaringanthemer)
 ```
 
 ```{r setup, include=FALSE}
@@ -30,6 +31,12 @@ knitr::opts_chunk$set(fig.retina = 3, dpi = 300, fig.width = 6, fig.asp = 0.618,
 
 ```{r load-data, include=FALSE}
 # Load your data here
+```
+
+```{r}
+style_xaringan(
+  title_slide_background_image = "img/confetti.jpg"
+)
 ```
 
 
